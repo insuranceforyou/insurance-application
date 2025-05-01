@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Insurance Application</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 30px;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 20px;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Insurance Application</h2>
+    <form action="https://formspree.io/f/mqaqeoya" method="POST">
+      
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label class="form-label">State</label>
+          <input type="text" class="form-control" name="state">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Death Benefit</label>
+          <input type="text" class="form-control" name="death_benefit">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Rider</label>
+          <input type="text" class="form-control" name="rider">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">LTC</label>
+          <input type="text" class="form-control" name="ltc">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label class="form-label">Premium</label>
+          <input type="text" class="form-control" name="premium">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Mode</label>
+          <input type="text" class="form-control" name="mode">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Company / Product</label>
+          <input type="text" class="form-control" name="product">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" name="email">
+      </div>
+
+      <h5 class="mt-4">Insured Info</h5>
+
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" name="insured_name">
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Gender</label>
+          <select class="form-select" name="gender">
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Marital Status</label>
+          <input type="text" class="form-control" name="marital_status">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Birthplace</label>
+          <input type="text" class="form-control" name="birthplace">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Citizen</label><br>
+          <input type="radio" name="citizen" value="Y"> Y
+          <input type="radio" name="citizen" value="N" class="ms-3"> N
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Green Card #</label>
+          <input type="text" class="form-control" name="green_card">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Date of Birth</label>
+          <input type="date" class="form-control" name="dob">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Phone</label>
+          <input type="tel" class="form-control" name="phone">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Income</label>
+          <input type="text" class="form-control" name="income">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Net Worth</label>
+          <input type="text" class="form-control" name="net_worth">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Address</label>
+        <input type="text" class="form-control" name="address">
+      </div>
+
+      <h5 class="mt-4">Owner Info</h5>
+
+      <div class="mb-3">
+        <label class="form-label">Owner Name</label>
+        <input type="text" class="form-control" name="owner_name">
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">DOB</label>
+          <input type="date" class="form-control" name="owner_dob">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Phone</label>
+          <input type="tel" class="form-control" name="owner_phone">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Birthplace</label>
+        <input type="text" class="form-control" name="owner_birthplace">
+      </div>
+
+      <h5 class="mt-4">Employment</h5>
+
+      <div class="mb-3">
+        <label class="form-label">Employer</label>
+        <input type="text" class="form-control" name="employer">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Occupation</label>
+        <input type="text" class="form-control" name="occupation">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" name="work_phone">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Address</label>
+        <input type="text" class="form-control" name="work_address">
+      </div>
+
+      <h5 class="mt-4">Doctor Info</h5>
+
+      <div class="mb-3">
+        <label class="form-label">Family Doctor</label>
+        <input type="text" class="form-control" name="doctor_name">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Doctor Phone</label>
+        <input type="tel" class="form-control" name="doctor_phone">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Doctor Address</label>
+        <input type="text" class="form-control" name="doctor_address">
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Date Last Visited</label>
+          <input type="date" class="form-control" name="last_visit">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Reason</label>
+          <input type="text" class="form-control" name="visit_reason">
+        </div>
+      </div>
+
+      <h5 class="mt-4">Beneficiaries</h5>
+
+      <!-- Add more if needed -->
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label class="form-label">P/C/%</label>
+          <input type="text" class="form-control" name="pc1">
+        </div>
+        <div class="col-md-5">
+          <label class="form-label">Relation</label>
+          <input type="text" class="form-control" name="relation1">
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">DOB</label>
+          <input type="date" class="form-control" name="relation_dob1">
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <label class="form-label">Client's Signature (type name)</label>
+        <input type="text" class="form-control" name="signature" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-4">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
