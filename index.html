@@ -324,6 +324,33 @@
   </div>
 
 
+      <div class="mb-4">
+  <label class="form-label">Preferred Secure Messaging Channel</label>
+  <p class="text-muted">Select how you'd like to send your SSN, routing, or account number to your underwriter:</p>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="secure_channel[]" value="WhatsApp" id="whatsapp">
+    <label class="form-check-label" for="whatsapp">WhatsApp</label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="secure_channel[]" value="iMessage" id="imessage">
+    <label class="form-check-label" for="imessage">iMessage</label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="secure_channel[]" value="Phone Call" id="call">
+    <label class="form-check-label" for="call">Phone Call</label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="secure_channel[]" value="Other" id="other">
+    <label class="form-check-label" for="other">Other</label>
+  </div>
+</div>
+
+
+
       <div class="mt-4">
         <label class="form-label">Client's Signature (type name)</label>
         <input type="text" class="form-control" name="signature" required>
